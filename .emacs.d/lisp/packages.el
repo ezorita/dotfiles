@@ -16,9 +16,13 @@
 	zenburn-theme
 	ido-vertical-mode
 	ido-completing-read+
+	markdown-mode
+	flx
+	flx-ido
+	yasnippet
+	yasnippet-snippets
 	)
       )
-
 
 ;; initialize packages
 (package-initialize)

@@ -15,17 +15,12 @@
 (load-library "buffers")
 (load-library "interface")
 (load-library "keybindings")
+(load-library "programming")
 
 ;; set the current location
 (setq calendar-latitude 41.401)
 (setq calendar-longitude 2.164)
 (setq calendar-location-name "Barcelona, Catalunya")
-
-;; autocompletion
-(setq tab-always-indent 'complete)
-
-;; disable backup files
-(setq make-backup-files nil)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

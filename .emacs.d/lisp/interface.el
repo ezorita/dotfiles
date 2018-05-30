@@ -18,5 +18,11 @@
 ;; startup screen
 (setq inhibit-startup-screen t)
 
+;; scroll window slowly
+(setq scroll-conservatively 10000 scroll-step 1)
+
+;; highlight current line (annoying in terminal)
+(global-hl-line-mode t)
+
 ;; theme
 (load-theme 'zenburn t)
