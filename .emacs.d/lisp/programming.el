@@ -1,13 +1,14 @@
 ;; Require libs
 (require 'paren)
-(require 'auto-complete)
-(require 'auto-complete-config)
+(require 'company)
 (require 'yasnippet)
 
-;; enable auto-complete mode
-(ac-config-default)
+;; enable autocomplete company-mode
+(add-hook 'prog-mode-hook #'company-mode)
+;; preview first word even if it's not the only one
+(setq company-frontends '(company-preview-frontend company-pseudo-tooltip-unless-just-one-frontend company-echo-metadata-frontend))
 
-;; word autocompletion
+;; builtin word autocompletion
 (setq tab-always-indent 'complete)
 
 ;; enable yasnippet for code snippet autocompletion
@@ -17,9 +18,6 @@
 (setq c-default-style '((java-mode . "java") (awk-mode . "awk") (other . "gnu")) c-basic-offset 3)
 
 ;; DELIMITER OPTIONS (parentheses, brackets..)
-
-;; enable only in programming modes
-;;(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 ;; electric pairs - ')' automatically appears when typing '(' (same for #, {, etc.)
 (add-hook 'prog-mode-hook #'electric-pair-mode)

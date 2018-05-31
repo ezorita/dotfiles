@@ -1,9 +1,7 @@
 (require 'package)
 
-
 ;; adds extra repositories to ELPA
 ;(add-to-list 'package-archives '("name" . "URL"))
-
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
@@ -12,7 +10,8 @@
 ;; package list
 
 (setq package-list
-      '(auto-complete
+      '(
+	company
 	zenburn-theme
 	ido-vertical-mode
 	ido-completing-read+
