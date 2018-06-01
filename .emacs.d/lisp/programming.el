@@ -28,3 +28,6 @@
 (set-face-background 'show-paren-match (face-background 'default))
 (set-face-foreground 'show-paren-match "#54bddb")
 (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
+
+;; GDB DEBUGGER
+(global-set-key (kbd "C-x SPC") 'gud-break)
