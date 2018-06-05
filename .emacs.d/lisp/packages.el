@@ -20,6 +20,7 @@
 	flx-ido
 	yasnippet
 	yasnippet-snippets
+	ess
 	)
       )
 
