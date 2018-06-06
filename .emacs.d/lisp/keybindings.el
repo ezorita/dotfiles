@@ -8,6 +8,7 @@
 (global-set-key (kbd "\C-r") 'isearch-backward-regexp)
 (global-set-key (kbd "C-M-s") 'isearch-forward)
 (global-set-key (kbd "C-M-r") 'isearch-backward)
+(global-set-key (kbd "M-s") 'shrink-whitespace)
 
 ;; always use short 'y or n'. (comment to use 'yes' or 'no' for important questions)
 (defalias 'yes-or-no-p 'y-or-n-p)

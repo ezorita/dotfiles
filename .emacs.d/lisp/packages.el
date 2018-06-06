@@ -21,6 +21,7 @@
 	yasnippet
 	yasnippet-snippets
 	ess
+	shrink-whitespace
 	)
       )
 
