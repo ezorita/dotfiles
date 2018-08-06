@@ -1,0 +1,49 @@
+-- Javascript: Node autocompletion
+
+To use Javascript autocompletion, emacs is configured to
+use js2-mode and company-tern. However, tern needs to be
+installed manually from 'npm' repos:
+
+  npm install -g tern
+
+Then create a symbolic link of the tern binary to PATH.
+
+Besides, company-tern needs some sort of config file.
+This file can be created in each project folder or it
+may be read from the home folder, so create a file
+named ~/.tern-project with the following contents:
+
+{
+    "libs": [
+        "browser",
+        "underscore",
+        "jquery"
+            ],
+        "plugins": {
+          "node": {}
+        }
+}
+
+Note that additiona libs may be specified to auto-
+complete certain projects. Just add them there.
+
+-- Javascript: Express autocompletion
+
+Tern does not support express autocompletion by default
+so, we need to install a plugin for tern.
+
+Clone https://github.com/angelozerr/tern-node-express
+and then copy the file 'node-express.js' to $TERN_BASE/plugins
+update ~/.tern-project with:
+
+{
+    "libs": [
+        "browser",
+        "underscore",
+        "jquery"
+            ],
+        "plugins": {
+          "node": {},
+	  "node-express": {}
+        }
+}

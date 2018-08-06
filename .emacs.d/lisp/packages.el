@@ -22,6 +22,10 @@
 	yasnippet-snippets
 	ess
 	shrink-whitespace
+	js2-mode
+	company-tern
+	pos-tip
+	company-quickhelp
 	)
       )
 
