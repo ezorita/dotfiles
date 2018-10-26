@@ -29,7 +29,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (ido-completing-read+ zenburn-theme ido-vertical-mode auto-complete))))
+    (pug-mode ido-completing-read+ zenburn-theme ido-vertical-mode auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

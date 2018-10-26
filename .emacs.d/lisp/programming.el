@@ -39,6 +39,7 @@
 (setq c-default-style '((java-mode . "java") (awk-mode . "awk") (other . "gnu")) c-basic-offset 3)
 (add-hook 'python-mode-hook (lambda () (setq python-indent-offset 3)))
 (add-hook 'js2-mode-hook (lambda () (setq js2-basic-offset 2)))
+(add-hook 'pug-mode-hook (lambda () (setq pug-tab-width 3)))
 
 ;;
 ;; DELIMITER OPTIONS (parentheses, brackets..)

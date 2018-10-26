@@ -26,3 +26,6 @@
 
 ;; theme
 (load-theme 'zenburn t)
+
+;; disable completions buffer
+(setq completion-auto-help 'lazy)

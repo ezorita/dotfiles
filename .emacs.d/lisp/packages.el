@@ -26,6 +26,7 @@
 	company-tern
 	pos-tip
 	company-quickhelp
+	pug-mode
 	)
       )
 
