@@ -63,6 +63,11 @@
 ;;  - eslint: npm install -g eslint
 ;;  - prettier: npm install -g prettier
 
+(defun setup-js-mode ()
+  "Setup default emacs JS mode."
+  (interactive)
+  (setq js-indent-level 2))
+
 (defun setup-tide-mode ()
   "Setup function for tide."
   (interactive)
@@ -73,7 +78,10 @@
   (tide-hl-identifier-mode +1)
   (company-mode +1))
 
+
 (setq company-tooltip-align-annotations t)
+
+(add-hook 'js-mode-hook #'setup-js-mode)
 
 (add-hook 'js-mode-hook #'setup-tide-mode)
 
@@ -82,15 +90,17 @@
 
 ;; FORMAT OPTIONS FOR JS files (prettier)
 
+;; (setq prettier-js-args '(
+;;   "--trailing-comma" "none"
+;;   "--bracket-spacing" "true"
+;;   "--single-quote" "true"
+;;   "--no-semi" "true"
+;;   "--jsx-single-quote" "true"
+;;   "--jsx-bracket-same-line" "true"
+;;   "--print-width" "78"))
 (setq prettier-js-args '(
-  "--trailing-comma" "none"
-  "--bracket-spacing" "true"
-  "--single-quote" "true"
-  "--no-semi" "true"
-  "--jsx-single-quote" "true"
-  "--jsx-bracket-same-line" "true"
-  "--print-width" "78"))
-
+     "--print-width" "78"))
+			 
 ;; Old modes for emacs < 27
 ;; enable js2-mode for '.js' files.
 ;; (add-to-list 'auto-mode-alist '("\\.js\\'" . rjsx-mode))
