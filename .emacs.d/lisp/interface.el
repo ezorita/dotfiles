@@ -1,7 +1,7 @@
 ;; INTERFACE
 
 ;; font and text
-(set-default-font "Ubuntu Mono-11")
+;; (set-default-font "Ubuntu Mono-11")
 
 ;; emacs menus and status bars
 (menu-bar-mode 0)

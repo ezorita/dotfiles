@@ -23,7 +23,10 @@
 	ess
 	shrink-whitespace
 	js2-mode
-	company-tern
+	rjsx-mode
+	flycheck
+	prettier-js
+	tide
 	pos-tip
 	company-quickhelp
 	pug-mode
