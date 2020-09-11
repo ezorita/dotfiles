@@ -1,10 +1,13 @@
 ## Dotfiles
+### TODO:
+- Set up flycheck for Python with flake8
+- Set up code navigation for Python (included in python.el?) https://www.emacswiki.org/emacs/PythonProgrammingInEmacs
 
 ### emacs
 Most things should work out of the box with emacs27+. JS modes require additional tools.
 
 #### Javascript modes
-Modes to autocomplete, autoformat and code browsing for Node.js and React.
+Modes to autocomplete, autoformat and code navigation for Node.js and React.
 
 ##### Requires
 - emacs27+
